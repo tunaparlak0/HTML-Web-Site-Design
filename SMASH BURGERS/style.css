@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#cf8782;
+    --black-color:#040504;
+    --red-color:#f20574;
+    --white-color:#fff;
+    --border: 0.2rem solid rgba(255,255,255,0.5);
+}
+
+/*--------------------------------------------------------------------------------GENEL BÖLÜM-----------------------------------------------------------------------------------*/
+
+*{
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all 0.5sn ease-in-out;
+}
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------------------------BODY SECTION-----------------------------------------------------------------------------------*/
+
+body{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 4.2rem 7%;
+}
+
+/*--------------------------------------------------------------------------------HEADER BÖLÜMÜ-----------------------------------------------------------------------------------*/
+
+.header .logo img{
+    height: 125px;
+    
+}
+
+.header{
+    background-color:var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 2rem 7%;
+    border-radius: 40rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    color: var(--black-color);
+    margin: 0 2.4rem ;
+    font-size: 3.2rem;
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color:var(--red-color);
+    padding-bottom:0.8rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 3.9rem;
+    margin-left: 2.4rem;
+    background-color: transparent;
+}
+
+/*--------------------------------------------------------------------------------HOME BÖLÜMÜ-----------------------------------------------------------------------------------*/
+
+.home{
+   min-height: 100vh;
+   background: url(4.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin-top: -20.1rem;
+   display: flex;
+   align-items: center;
+}
+
+.home .content{
+    max-width: 72rem;
+}
+
+.home .content h3{
+    font-size: 10rem;
+    color: var(--main-color);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 350;
+    line-height: 1.8;
+    padding: 1.4rem 0;
+}
+
+.btn{
+    margin-top: 1.3rem;
+    display: inline-block;
+    padding: 2.6rem 4.2rem;
+    border-radius: 36rem;
+    color:var(--white-color);
+    background-color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+/*------------------------------------------------------------------------------MENÜ BÖLÜMÜ 2.SAYFA--------------------------------------------------------------------------------*/
+
+.menu h1{
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
+
+
